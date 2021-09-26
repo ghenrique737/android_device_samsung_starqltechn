@@ -23,4 +23,7 @@ DEVICE_PATH := device/samsung/starqltechn
 TARGET_OTA_ASSERT_DEVICE := starqltechn
 
 # Kernel
-TARGET_KERNEL_CONFIG := starqlte_chn_open_defconfig
+TARGET_KERNEL_CONFIG := lineage-starqltechn_defconfig
+
+# inherit from the proprietary version
+include vendor/samsung/starqltechn/BoardConfigVendor.mk
